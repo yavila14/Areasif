@@ -17,20 +17,22 @@ int main(int argc, char** argv) {
 		cin >>altura;
 		atriangulo=(base*altura)/2;
 		cout <<"El area del triangulo es : " <<atriangulo;
-	}
-	if (opcion==2){
+	}else if (opcion==2){
 		cout <<"Digite el radio : ";
 		cin >>radio;	
 		acirculo=PI*(radio*radio);
 		cout <<"El area del circulo es : " <<acirculo;
-	}
-	if (opcion==3){
+	}else if (opcion==3){
 		cout <<"Digite lado 1 : ";
 		cin >>lado1;
 		cout <<"Digite lado 2 : ";
 		cin >>lado2;	
 		acuadrado=lado1*lado2;
 		cout <<"El area del cuadrado es : " <<acuadrado;
-	}
+	} else{
+	
+		cout <<"La opcion no es correcta";
+		return 0;
+}
 	return 0;
 }
